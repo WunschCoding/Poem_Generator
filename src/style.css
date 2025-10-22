@@ -1,7 +1,8 @@
 body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 a {
-  color: #9e85db;
+  color: #885df1;
 }
 h1 {
   text-align: center;
@@ -16,10 +17,20 @@ footer {
   padding-top: 10px;
   margin-top: 15px;
   text-align: center;
+  font-size: 12px;
+}
+form {
+  background-color: white;
+  border-radius: 25px;
+  display: flex;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+}
+main {
+  padding: 15px;
 }
 .poem-app {
   margin: 0 auto;
-  background-color: beige;
+  background-color: #f9f7fe;
   padding: 20px;
   max-width: 600px;
 }
@@ -30,16 +41,19 @@ footer {
   font-size: 16px;
   line-height: 24px;
   width: 80%;
-  border-radius: 6px;
+  border-radius: 25px 0 0 25px;
+  border: 1px solid rgba(39, 33, 66, 0.5);
+  padding: 10px 25px;
 }
 .submit-button {
   font-size: 16px;
   line-height: 24px;
   color: white;
-  background-color: #662eed;
-  margin-left: 15px;
+  background-color: #885df1;
+  margin-left: 5px;
   padding: 5px 12px;
-  border-radius: 6px;
+  border-radius: 0 25px 25px 0;
+  border: none;
 }
 .poem-heading {
   font-size: 24px;
@@ -53,6 +67,8 @@ footer {
   opacity: 0.5;
 }
 .poem-text {
+  font-size: 16px;
+  line-height: 2;
   text-align: left;
   margin-top: 10px;
 }
