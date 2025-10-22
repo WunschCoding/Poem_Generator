@@ -3,34 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Poem generator</title>
+    <title>Poem Generator</title>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <h1>Welcome to my poem generator</h1>
-
-    <footer>
-      This Project was coded by
-      <a
-        href="https://github.com/WunschCoding"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Michaela Wunsch</a
-      >, is
-      <a
-        href="https://github.com/WunschCoding/Poem_Generator"
-        target="_blank"
-        rel="noopener noreferrer"
-        >open-sourced on GitHub</a
-      >
-      and
-      <a
-        href="https://poem-generator.wunschcoding.at/"
-        target="_blank"
-        rel="noopener noreferrer"
-        >hosted on Hostinger</a
-      >.
-    </footer>
-    <script src="src/index.js"></script>
+    <div class="poem-app">
+      <header>
+        <h1>Poem Generator</h1>
+        <form class="topic-input">
+          <input
+            class="input-text"
+            type="text"
+            placeholder="Enter the topic of the poem"
+            required
+            autocomplete="off"
+          />
+          <input class="submit-button" type="submit" value="submit" />
+        </form>
+      </header>
+      <main>
+        <div class="poem-heading">How Beautiful</div>
+        <div class="poem-author">By Mary Jo Bang</div>
+        <div class="poem-text">
+          A personal lens: glass bending rays That gave one that day’s news
+          Saying each and every day, Just remember you are standing On a planet
+          that’s evolving. How beautiful, she thought, what distance does For
+          water, the view from above or afar. In last night’s dream, they were
+          back again At the beginning. She was a child And he was a child. A
+          plane lit down and left her there. Cold whitening the white sky
+          whiter. Then a scalpel cut her open for all the world To be a sea.
+        </div>
+      </main>
+      <footer>
+        This Project was coded by
+        <a
+          href="https://github.com/WunschCoding"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Michaela Wunsch</a
+        >, is
+        <a
+          href="https://github.com/WunschCoding/Poem_Generator"
+          target="_blank"
+          rel="noopener noreferrer"
+          >open-sourced on GitHub</a
+        >
+        and
+        <a
+          href="https://poem-generator.wunschcoding.at/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >hosted on Hostinger</a
+        >.
+      </footer>
+      <script src="src/index.js"></script>
+    </div>
   </body>
 </html>

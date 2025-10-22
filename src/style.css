@@ -1,14 +1,58 @@
 body {
-  background-color: beige;
 }
 a {
-  color: #ebe3ff;
+  color: #9e85db;
 }
 h1 {
   text-align: center;
 }
+header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  margin-bottom: 10px;
+}
+
 footer {
-  border-top: 1px solid black;
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
+  padding-top: 10px;
   margin-top: 15px;
   text-align: center;
+}
+.poem-app {
+  margin: 0 auto;
+  background-color: beige;
+  padding: 20px;
+  max-width: 600px;
+}
+.topic-input {
+  margin: 15px;
+}
+.input-text {
+  font-size: 16px;
+  line-height: 24px;
+  width: 80%;
+  border-radius: 6px;
+}
+.submit-button {
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  background-color: #662eed;
+  margin-left: 15px;
+  padding: 5px 12px;
+  border-radius: 6px;
+}
+.poem-heading {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+.poem-author {
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.5;
+}
+.poem-text {
+  text-align: left;
+  margin-top: 10px;
 }
