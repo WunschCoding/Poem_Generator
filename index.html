@@ -4,15 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Poem Generator</title>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <div class="poem-app">
       <header>
         <h1>Poem Generator</h1>
-        <form class="topic-input">
+        <form class="topic-input" id="poem-generator-form">
           <input
             class="input-text"
+            id="input-text-form"
             type="text"
             placeholder="Enter the topic of the poem"
             required
@@ -22,28 +24,12 @@
         </form>
       </header>
       <main>
-        <div class="poem-heading">How Beautiful</div>
-        <div class="poem-author">By Mary Jo Bang</div>
-        <div class="poem-text">
-          <p>
-            A personal lens: glass bending rays <br />
-            That gave one that day’s news <br />
-            Saying each and every day,
-          </p>
-          <p>
-            Just remember you are standing <br />On a planet that’s evolving.
-            <br />How beautiful, she thought, what distance does
-          </p>
-          <p>
-            For water, the view from above or afar. <br />In last night’s dream,
-            they were back again <br />At the beginning. She was a child
-          </p>
-          <p>
-            And he was a child. <br />A plane lit down and left her there.
-            <br />Cold whitening the white sky whiter. <br />Then a scalpel cut
-            her open for all the world To be a sea.
-          </p>
+        <div class="poem-heading" id="poem-heading"></div>
+        <div class="poem-author">
+          <span id="poem-by"></span>
+          <span id="poem-author"></span>
         </div>
+        <div class="poem-text" id="poem-text"></div>
       </main>
       <footer>
         This Project was coded by
@@ -67,7 +53,7 @@
           >hosted on Hostinger</a
         >.
       </footer>
-      <script src="src/index.js"></script>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
