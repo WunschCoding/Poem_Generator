@@ -1,6 +1,9 @@
 body {
   background-color: beige;
 }
+a {
+  color: #ebe3ff;
+}
 h1 {
   text-align: center;
 }
