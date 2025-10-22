@@ -15,7 +15,7 @@ function generatingPoem(event) {
   let poemAuthorElement = document.querySelector("#poem-author");
   poemAuthorElement.innerHTML = "SheCodes AI";
   let poemTextElement = document.querySelector("#poem-text");
-  poemTextElement.innerHTML = "Poem is being generated";
+  poemTextElement.innerHTML = `Poem about ${inputPoemForm.value} is being generated`;
   let poemMain = document.querySelector("main");
   poemMain.classList.remove("hidden");
   poemTextElement.classList.add("blink");
