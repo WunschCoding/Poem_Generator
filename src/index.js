@@ -24,7 +24,13 @@ function generatingPoem(event) {
 function displayPoem(response) {
   let poemText = response.data.answer;
   let poemTextElement = document.querySelector("#poem-text");
-  poemTextElement.innerHTML = poemText;
+
+  new Typewriter("#poem-text", {
+    strings: poemText,
+    autoStart: true,
+    delay: 25,
+    cursor: "",
+  });
 }
 
 function startPoem() {
