@@ -16,6 +16,8 @@ function generatingPoem(event) {
   poemAuthorElement.innerHTML = "SheCodes AI";
   let poemTextElement = document.querySelector("#poem-text");
   poemTextElement.innerHTML = "Poem is being generated";
+  let poemMain = document.querySelector("main");
+  poemMain.classList.remove("hidden");
 
   axios.get(apiUrl).then(displayPoem);
   inputPoemForm.value = null;
@@ -62,6 +64,13 @@ function startPoem() {
   poemTextElement.innerHTML = poemText;
 }
 
-startPoem();
+function hidePoemSection() {
+  let poemMain = document.querySelector("main");
+  poemMain.classList.add("hidden");
+}
+
+//startPoem();
+hidePoemSection();
+
 let submitPoemForm = document.querySelector("#poem-generator-form");
 submitPoemForm.addEventListener("submit", generatingPoem);
