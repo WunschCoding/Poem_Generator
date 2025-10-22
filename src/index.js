@@ -18,6 +18,7 @@ function generatingPoem(event) {
   poemTextElement.innerHTML = "Poem is being generated";
   let poemMain = document.querySelector("main");
   poemMain.classList.remove("hidden");
+  poemTextElement.classList.add("blink");
 
   axios.get(apiUrl).then(displayPoem);
   inputPoemForm.value = null;
@@ -26,7 +27,7 @@ function generatingPoem(event) {
 function displayPoem(response) {
   let poemText = response.data.answer;
   let poemTextElement = document.querySelector("#poem-text");
-
+  poemTextElement.classList.remove("blink");
   new Typewriter("#poem-text", {
     strings: poemText,
     autoStart: true,
